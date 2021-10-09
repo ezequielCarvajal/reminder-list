@@ -1,0 +1,83 @@
+.container {
+  font-family:monospace;
+  width: 300px;
+  margin: 10px auto;
+  padding: 20px;
+  background: #82b9bb;
+  text-align: center;
+  color: #2e234a;
+  border-radius: 5px;
+}
+
+.TodoSearch {
+  width: 65%;
+  border: none;
+  background: #6da8c596;
+  border-bottom: 1px solid #333;
+}
+.TodoSearch:focus-visible {
+  outline: none;
+  color: #000;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.TodoTitle {
+  font-family: emoji;
+  font-weight:bolder;
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.TodoItem {
+  border-radius: 5px;
+  border: 2px solid #333;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.TodoItem p{
+  color: #2e234a;
+  font-weight: 600;
+}
+.Icon-check, .Icon-delete{
+   border: 1px solid black;
+   border-radius: 5px;
+   margin: 5px;
+   padding: 5px;
+   font-weight: 900;
+   color: green;
+   opacity: .5;
+}
+.Icon-check:hover , .Icon-delete:hover, .CreateTodoButton:hover{
+  transform: scale(1.2);
+  opacity: 1;
+  cursor: pointer;
+  
+}
+.CreateTodoButton_container{
+  /* border: 1px solid red; */
+  width: 55px;
+  position: fixed;
+  right:calc(50% - 165px);
+}
+.CreateTodoButton_container .infoButton {
+  font-family: monospace;
+  font-weight: 800;
+  color: #2e234a;
+  display: none;
+}
+.CreateTodoButton_container:hover > .infoButton{
+  display: inline-block;
+}
+.CreateTodoButton {
+  width: 30px;
+  margin: 5px;
+  padding: 15px;
+  padding-right: 30px;
+  background: #82b9bb;
+  border: none;
+  border-radius: 5px;
+  opacity: .8;
+}
